@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/dimon"
+        android:textColor="#ED0000"
+        android:gravity="center"
+        android:background="@drawable/ground"
+        android:textSize="50sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00BCD4"
+        android:textSize="50sp"
+        android:text="ГАНЬГ"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2FFF00"
+        android:textColor="#0DD2EC"
+        android:onClick="onClickBtnAddDog"
+        android:textSize="90sp"
+        android:text="БАНЬГ" />
+</androidx.appcompat.widget.LinearLayoutCompat>
