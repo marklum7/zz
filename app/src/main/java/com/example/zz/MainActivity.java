@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
             counter = savedInstanceState.getInt("count");
         }
         setContentView(R.layout.activity_main);
-
-        Log.d(TAG, "onCreate");
-        // Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
     }
 
     public void onClickBtnAddDog(View view) {
@@ -33,14 +30,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(TAG, "onStart");
         resetUI();
     }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("count", counter);
-        Log.d(TAG, "onSaveInstanceState");
 
     }
     @Override
@@ -50,11 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 savedInstanceState.containsKey("count")) {
             counter = savedInstanceState.getInt("count");
         }
-        Log.d(TAG, "onRestoreInstanceState");
     }
     private void resetUI() {
         ((TextView) findViewById(R.id.txt_counter)).setText(counter.toString());
-        Log.d(TAG, "resetUI");
+
     }
 
 
